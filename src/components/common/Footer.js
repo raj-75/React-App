@@ -1,9 +1,11 @@
 import React from "react";
 
 function Footer() {
+  var currDate = new Date();
+ var currYear = currDate.getFullYear();
     return (
      <>
-     <div>Copy Right @2024</div>
+     <div>Copy Right @{currYear}</div>
      </>
     );
   }

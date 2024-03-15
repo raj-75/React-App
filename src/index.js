@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
+import Activity1 from './components/modules/Activity1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
      <Header/>
-    <App />
+    {/* <App /> */}
+    <Activity1 condition={true} volume={10} />
     <Footer/>
   </React.StrictMode>
 );
